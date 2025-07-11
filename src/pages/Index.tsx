@@ -1,6 +1,7 @@
 
 import Navigation from '../components/Navigation';
 import HeroCarousel from '../components/HeroCarousel';
+import Footer from '../components/Footer';
 import { TrendingUp, Smartphone, Scissors, ShoppingBag } from 'lucide-react';
 
 const Index = () => {
@@ -78,6 +79,8 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
