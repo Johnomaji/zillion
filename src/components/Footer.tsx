@@ -48,26 +48,26 @@ const Footer = () => {
     <footer className="bg-gradient-to-b from-onyx to-black border-t border-gray-800">
       {/* Newsletter Section */}
       <div className="border-b border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <div className="text-center">
-            <h3 className="font-playfair text-3xl font-bold text-white mb-4">
+            <h3 className="font-playfair text-2xl sm:text-3xl font-bold text-white mb-4">
               Stay in the <span className="text-gold">Loop</span>
             </h3>
-            <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
+            <p className="text-gray-400 mb-6 sm:mb-8 max-w-2xl mx-auto text-sm sm:text-base">
               Be the first to know about new collections, exclusive drops, and cultural stories that inspire our designs.
             </p>
-            <form onSubmit={handleNewsletterSubmit} className="max-w-md mx-auto flex gap-4">
+            <form onSubmit={handleNewsletterSubmit} className="max-w-md mx-auto flex flex-col sm:flex-row gap-3 sm:gap-4">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
-                className="flex-1 bg-card border border-gray-700 text-white px-4 py-3 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent"
+                className="flex-1 bg-card border border-gray-700 text-white px-4 py-3 rounded-lg focus:ring-2 focus:ring-gold focus:border-transparent text-sm sm:text-base"
                 required
               />
               <button
                 type="submit"
-                className="luxury-button rounded-lg px-6 py-3 font-medium"
+                className="luxury-button rounded-lg px-6 py-3 font-medium text-sm sm:text-base whitespace-nowrap"
               >
                 Subscribe
               </button>
@@ -77,40 +77,40 @@ const Footer = () => {
       </div>
 
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-8">
           
           {/* Brand Section */}
           <div className="lg:col-span-2 space-y-6">
             <Link to="/" className="flex items-center space-x-2" onClick={scrollToTop}>
-              <div className="w-12 h-12 bg-gradient-to-br from-gold to-africanprint rounded-lg flex items-center justify-center">
-                <span className="text-onyx font-bold text-2xl">Z</span>
+              <div className="w-10 sm:w-12 h-10 sm:h-12 bg-gradient-to-br from-gold to-africanprint rounded-lg flex items-center justify-center">
+                <span className="text-onyx font-bold text-xl sm:text-2xl">Z</span>
               </div>
-              <span className="font-playfair font-bold text-2xl text-gold">Zillion Kulture</span>
+              <span className="font-playfair font-bold text-xl sm:text-2xl text-gold">Zillion Kulture</span>
             </Link>
             
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
               Unapologetically African, Uncommonly Stylish. We bridge cultures and rewire style for the 21st century with bold heritage and cutting-edge innovation.
             </p>
             
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-gold transition-colors">
-                <Facebook size={24} />
+                <Facebook size={20} className="sm:w-6 sm:h-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-gold transition-colors">
-                <Instagram size={24} />
+                <Instagram size={20} className="sm:w-6 sm:h-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-gold transition-colors">
-                <Twitter size={24} />
+                <Twitter size={20} className="sm:w-6 sm:h-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-gold transition-colors">
-                <Youtube size={24} />
+                <Youtube size={20} className="sm:w-6 sm:h-6" />
               </a>
             </div>
           </div>
 
           {/* Links Sections */}
-          <div>
+          <div className="sm:col-span-1">
             <h4 className="font-playfair text-lg font-bold text-white mb-4">Shop</h4>
             <ul className="space-y-2">
               {footerLinks.shop.map((link) => (
@@ -118,7 +118,7 @@ const Footer = () => {
                   <Link
                     to={link.path}
                     onClick={scrollToTop}
-                    className="text-gray-400 hover:text-gold transition-colors"
+                    className="text-gray-400 hover:text-gold transition-colors text-sm sm:text-base"
                   >
                     {link.name}
                   </Link>
@@ -127,7 +127,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="sm:col-span-1">
             <h4 className="font-playfair text-lg font-bold text-white mb-4">Experience</h4>
             <ul className="space-y-2">
               {footerLinks.experience.map((link) => (
@@ -135,7 +135,7 @@ const Footer = () => {
                   <Link
                     to={link.path}
                     onClick={scrollToTop}
-                    className="text-gray-400 hover:text-gold transition-colors"
+                    className="text-gray-400 hover:text-gold transition-colors text-sm sm:text-base"
                   >
                     {link.name}
                   </Link>
@@ -144,7 +144,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="sm:col-span-1">
             <h4 className="font-playfair text-lg font-bold text-white mb-4">Company</h4>
             <ul className="space-y-2">
               {footerLinks.company.map((link) => (
@@ -152,7 +152,7 @@ const Footer = () => {
                   <Link
                     to={link.path}
                     onClick={scrollToTop}
-                    className="text-gray-400 hover:text-gold transition-colors"
+                    className="text-gray-400 hover:text-gold transition-colors text-sm sm:text-base"
                   >
                     {link.name}
                   </Link>
@@ -161,7 +161,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="sm:col-span-1">
             <h4 className="font-playfair text-lg font-bold text-white mb-4">Support</h4>
             <ul className="space-y-2">
               {footerLinks.support.map((link) => (
@@ -169,7 +169,7 @@ const Footer = () => {
                   <Link
                     to={link.path}
                     onClick={scrollToTop}
-                    className="text-gray-400 hover:text-gold transition-colors"
+                    className="text-gray-400 hover:text-gold transition-colors text-sm sm:text-base"
                   >
                     {link.name}
                   </Link>
@@ -181,28 +181,28 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="flex items-center space-x-3">
-              <Mail className="text-gold" size={20} />
+              <Mail className="text-gold flex-shrink-0" size={18} />
               <div>
-                <div className="text-white font-medium">Email</div>
-                <div className="text-gray-400">hello@zillionkulture.com</div>
+                <div className="text-white font-medium text-sm sm:text-base">Email</div>
+                <div className="text-gray-400 text-sm break-all">hello@zillionkulture.com</div>
               </div>
             </div>
             
             <div className="flex items-center space-x-3">
-              <Phone className="text-gold" size={20} />
+              <Phone className="text-gold flex-shrink-0" size={18} />
               <div>
-                <div className="text-white font-medium">Phone</div>
-                <div className="text-gray-400">+1 (555) 123-4567</div>
+                <div className="text-white font-medium text-sm sm:text-base">Phone</div>
+                <div className="text-gray-400 text-sm">+1 (555) 123-4567</div>
               </div>
             </div>
             
             <div className="flex items-center space-x-3">
-              <MapPin className="text-gold" size={20} />
+              <MapPin className="text-gold flex-shrink-0" size={18} />
               <div>
-                <div className="text-white font-medium">Global Headquarters</div>
-                <div className="text-gray-400">Lagos, Nigeria</div>
+                <div className="text-white font-medium text-sm sm:text-base">Global Headquarters</div>
+                <div className="text-gray-400 text-sm">Lagos, Nigeria</div>
               </div>
             </div>
           </div>
@@ -212,7 +212,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2025 Zillion Kulture. All rights reserved. | Privacy Policy | Terms of Service
             </div>

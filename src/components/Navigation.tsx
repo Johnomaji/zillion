@@ -34,10 +34,10 @@ const Navigation = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-gold to-africanprint rounded-lg flex items-center justify-center">
-              <span className="text-onyx font-bold text-xl">Z</span>
+            <div className="w-8 sm:w-10 h-8 sm:h-10 bg-gradient-to-br from-gold to-africanprint rounded-lg flex items-center justify-center">
+              <span className="text-onyx font-bold text-lg sm:text-xl">Z</span>
             </div>
-            <span className="font-playfair font-bold text-2xl text-gold">Zillion Kulture</span>
+            <span className="font-playfair font-bold text-xl sm:text-2xl text-gold">Zillion Kulture</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -53,16 +53,16 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
-            <button className="luxury-button rounded-full flex items-center space-x-2">
+            <Link to="/shop" className="luxury-button rounded-full flex items-center space-x-2 px-6 py-3">
               <ShoppingBag size={16} />
               <span>Shop Now</span>
-            </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-white hover:text-gold transition-colors"
+            className="lg:hidden text-white hover:text-gold transition-colors p-2"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -85,10 +85,10 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <button className="luxury-button rounded-full w-full flex items-center justify-center space-x-2">
+                <Link to="/shop" className="luxury-button rounded-full w-full flex items-center justify-center space-x-2 px-6 py-3" onClick={() => setIsOpen(false)}>
                   <ShoppingBag size={16} />
                   <span>Shop Now</span>
-                </button>
+                </Link>
               </div>
             </div>
           </div>
