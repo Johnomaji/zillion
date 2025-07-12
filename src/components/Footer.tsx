@@ -84,7 +84,7 @@ const Footer = () => {
           <div className="lg:col-span-2 space-y-6">
             <Link to="/" className="flex items-center space-x-2" onClick={scrollToTop}>
               <div className="w-10 sm:w-12 h-10 sm:h-12 bg-gradient-to-br from-gold to-africanprint rounded-lg flex items-center justify-center">
-                <span className="text-onyx font-bold text-xl sm:text-2xl">Z</span>
+                <img className="text-onyx font-bold text-lg sm:text-xl" src="logo.png" alt="Zillion Kulture Logo" />
               </div>
               <span className="font-playfair font-bold text-xl sm:text-2xl text-gold">Zillion Kulture</span>
             </Link>

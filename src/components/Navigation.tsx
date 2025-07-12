@@ -35,7 +35,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 sm:w-10 h-8 sm:h-10 bg-gradient-to-br from-gold to-africanprint rounded-lg flex items-center justify-center">
-              <span className="text-onyx font-bold text-lg sm:text-xl">Z</span>
+              <img className="text-onyx font-bold text-lg sm:text-xl" src="logo.png" alt="Zillion Kulture Logo" />
             </div>
             <span className="font-playfair font-bold text-xl sm:text-2xl text-gold">Zillion Kulture</span>
           </Link>

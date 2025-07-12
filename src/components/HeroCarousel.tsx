@@ -11,7 +11,7 @@ const HeroCarousel = () => {
       title: "Join the Revolution",
       subtitle: "Zillion Kulture Movement",
       description: "From chic smart-casual staples to show-stopping luxury wear, each item is crafted for confidence and cultural pride.",
-      image: "/lovable-uploads/ed7d727a-63f4-4cbb-8619-da854d115838.png",
+      image: "/lovable-uploads/hero-3.jpg",
       cta1: { text: "Virtual Try-On", link: "/virtual-try-on" },
       cta2: { text: "Watch Story", link: "/about" }
     },
@@ -19,7 +19,7 @@ const HeroCarousel = () => {
       title: "Wake Up the World",
       subtitle: "Bold African Heritage",
       description: "Our hero carousel bursts with vibrant prints and luxe fabrics – each slide a snapshot of a story where tradition meets tomorrow.",
-      image: "/lovable-uploads/ed7d727a-63f4-4cbb-8619-da854d115838.png",
+      image: "/lovable-uploads/hero-1.jpg",
       cta1: { text: "Shop Collection", link: "/shop" },
       cta2: { text: "Explore Lookbook", link: "/lookbook" }
     },
@@ -27,7 +27,7 @@ const HeroCarousel = () => {
       title: "Honor the Past",
       subtitle: "Wear the Future",
       description: "Unapologetically African, Uncommonly Stylish. Step into the revolution where every piece tells a story of heritage and innovation.",
-      image: "/lovable-uploads/ed7d727a-63f4-4cbb-8619-da854d115838.png",
+      image: "/lovable-uploads/hero-2.jpg",
       cta1: { text: "Customize Now", link: "/customize" },
       cta2: { text: "Join Community", link: "/community" }
     }
