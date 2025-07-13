@@ -10,91 +10,91 @@ const Shop = () => {
   const [selectedSize, setSelectedSize] = useState('all');
 
   const products = [
-    {
-      id: 1,
-      name: "Ankara Executive Blazer",
-      category: "smart-casual",
-      price: 189,
-      originalPrice: 249,
-      image: "/placeholder.svg",
-      rating: 4.8,
-      reviews: 124,
-      sizes: ["XS", "S", "M", "L", "XL"],
-      colors: ["gold", "burgundy", "electric"],
-      isNew: true,
-      description: "Tailored Ankara blazer perfect for professional settings with traditional flair."
-    },
-    {
-      id: 2,
-      name: "Kente Ceremonial Gown",
-      category: "luxury",
-      price: 1299,
-      originalPrice: null,
-      image: "/placeholder.svg",
-      rating: 4.9,
-      reviews: 89,
-      sizes: ["XS", "S", "M", "L", "XL", "XXL"],
-      colors: ["gold", "burgundy"],
-      isNew: false,
-      description: "Exquisite hand-woven Kente gown for special occasions and ceremonies."
-    },
-    {
-      id: 3,
-      name: "Urban Tribal Shirt",
-      category: "smart-casual",
-      price: 89,
-      originalPrice: null,
-      image: "/placeholder.svg",
-      rating: 4.7,
-      reviews: 203,
-      sizes: ["S", "M", "L", "XL"],
-      colors: ["onyx", "gold", "electric"],
-      isNew: true,
-      description: "Contemporary shirt with traditional patterns for everyday sophistication."
-    },
-    {
-      id: 4,
-      name: "Luxury Beaded Kaftan",
-      category: "luxury",
-      price: 899,
-      originalPrice: 1099,
-      image: "/placeholder.svg",
-      rating: 4.8,
-      reviews: 67,
-      sizes: ["XS", "S", "M", "L", "XL"],
-      colors: ["burgundy", "gold"],
-      isNew: false,
-      description: "Intricately beaded kaftan crafted from premium silk and velvet."
-    },
-    {
-      id: 5,
-      name: "Mudcloth Casual Jacket",
-      category: "smart-casual",
-      price: 159,
-      originalPrice: null,
-      image: "/placeholder.svg",
-      rating: 4.6,
-      reviews: 156,
-      sizes: ["S", "M", "L", "XL", "XXL"],
-      colors: ["onyx", "africanprint"],
-      isNew: false,
-      description: "Lightweight jacket featuring authentic mudcloth patterns and modern cut."
-    },
-    {
-      id: 6,
-      name: "Royal Wax Print Suit",
-      category: "luxury",
-      price: 1899,
-      originalPrice: null,
-      image: "/placeholder.svg",
-      rating: 5.0,
-      reviews: 45,
-      sizes: ["XS", "S", "M", "L", "XL"],
-      colors: ["gold", "burgundy", "electric"],
-      isNew: true,
-      description: "Bespoke suit in luxurious wax print fabric with impeccable tailoring."
-    }
-  ];
+  {
+    id: 1,
+    name: "Ankara Executive Blazer",
+    category: "smart-casual",
+    price: 189,
+    originalPrice: 249,
+    image: "/photos/ankara_executive_blazer.png",
+    rating: 4.8,
+    reviews: 124,
+    sizes: ["XS", "S", "M", "L", "XL"],
+    colors: ["gold", "burgundy", "electric"],
+    isNew: true,
+    description: "Tailored Ankara blazer perfect for professional settings with traditional flair."
+  },
+  {
+    id: 2,
+    name: "Kente Ceremonial Gown",
+    category: "luxury",
+    price: 1299,
+    originalPrice: null,
+    image: "/photos/kente_ceremonial_gown.png",
+    rating: 4.9,
+    reviews: 89,
+    sizes: ["XS", "S", "M", "L", "XL", "XXL"],
+    colors: ["gold", "burgundy"],
+    isNew: false,
+    description: "Exquisite hand-woven Kente gown for special occasions and ceremonies."
+  },
+  {
+    id: 3,
+    name: "Urban Tribal Shirt",
+    category: "smart-casual",
+    price: 89,
+    originalPrice: null,
+    image: "/photos/urban_tribal_shirt.png",
+    rating: 4.7,
+    reviews: 203,
+    sizes: ["S", "M", "L", "XL"],
+    colors: ["onyx", "gold", "electric"],
+    isNew: true,
+    description: "Contemporary shirt with traditional patterns for everyday sophistication."
+  },
+  {
+    id: 4,
+    name: "Luxury Beaded Kaftan",
+    category: "luxury",
+    price: 899,
+    originalPrice: 1099,
+    image: "/photos/luxury_beaded_kaftan.png",
+    rating: 4.8,
+    reviews: 67,
+    sizes: ["XS", "S", "M", "L", "XL"],
+    colors: ["burgundy", "gold"],
+    isNew: false,
+    description: "Intricately beaded kaftan crafted from premium silk and velvet."
+  },
+  {
+    id: 5,
+    name: "Mudcloth Casual Jacket",
+    category: "smart-casual",
+    price: 159,
+    originalPrice: null,
+    image: "/photos/mudcloth_casual_jacket.png",
+    rating: 4.6,
+    reviews: 156,
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: ["onyx", "africanprint"],
+    isNew: false,
+    description: "Lightweight jacket featuring authentic mudcloth patterns and modern cut."
+  },
+  {
+    id: 6,
+    name: "Royal Wax Print Suit",
+    category: "luxury",
+    price: 1899,
+    originalPrice: null,
+    image: "/photos/royal_wax_print_suit.png",
+    rating: 5.0,
+    reviews: 45,
+    sizes: ["XS", "S", "M", "L", "XL"],
+    colors: ["gold", "burgundy", "electric"],
+    isNew: true,
+    description: "Bespoke suit in luxurious wax print fabric with impeccable tailoring."
+  }
+];
 
   const filteredProducts = products.filter(product => {
     if (selectedCategory !== 'all' && product.category !== selectedCategory) return false;
