@@ -1,4 +1,3 @@
-
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import { Sparkles, Users, Award, Globe } from 'lucide-react';
@@ -9,21 +8,21 @@ const About = () => {
       name: "Amara Okafor",
       role: "Founder & Creative Director",
       bio: "A design innovator steeped in heritage. Our creative lead channels family tradition into every stitch, crafting each silhouette with cultural flair.",
-      image: "/placeholder.svg",
+      image: "/photos/amara_okafor.jpg",
       color: "from-gold to-africanprint"
     },
     {
       name: "Kwame Asante",
       role: "Tech Lead",
       bio: "A virtual fitting-room pioneer. They integrate Google's generative AI so every customer can try before they buy.",
-      image: "/placeholder.svg",
+      image: "/photos/kwame_asante.png",
       color: "from-electric to-burgundy"
     },
     {
       name: "Zara Molina",
       role: "Community Manager",
       bio: "A global storyteller connecting you through testimonials and real-world adventures in ZK gear.",
-      image: "/placeholder.svg",
+      image: "/photos/zara_molina.png",
       color: "from-burgundy to-gold"
     }
   ];
@@ -93,7 +92,7 @@ const About = () => {
             <div className="relative">
               <div className="aspect-square rounded-3xl overflow-hidden">
                 <img
-                  src="/placeholder.svg"
+                  src="/photos/our_story.jpg"
                   alt="Our Story"
                   className="w-full h-full object-cover"
                 />
