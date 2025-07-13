@@ -15,16 +15,14 @@ const Customize = () => {
     hips: '',
     length: ''
   });
-
-  const categories = [
-    { id: 'blazers', name: 'Blazers', icon: '🧥', preview: '/placeholder.svg' },
-    { id: 'dresses', name: 'Dresses', icon: '👗', preview: '/placeholder.svg' },
-    { id: 'shirts', name: 'Shirts', icon: '👔', preview: '/placeholder.svg' },
-    { id: 'kaftans', name: 'Kaftans', icon: '👘', preview: '/placeholder.svg' },
-    { id: 'suits', name: 'Suits', icon: '🤵', preview: '/placeholder.svg' },
-    { id: 'accessories', name: 'Accessories', icon: '👜', preview: '/placeholder.svg' }
-  ];
-
+const categories = [
+  { id: 'blazers', name: 'Blazers', icon: '🧥', preview: '/photos/ankara_executive_blazer.png' },
+  { id: 'dresses', name: 'Dresses', icon: '👗', preview: '/photos/kente_ceremonial_gown.png' },
+  { id: 'shirts', name: 'Shirts', icon: '👔', preview: '/photos/urban_tribal_shirt.png' },
+  { id: 'kaftans', name: 'Kaftans', icon: '👘', preview: '/photos/luxury_beaded_kaftan.png' },
+  { id: 'suits', name: 'Suits', icon: '🤵', preview: '/photos/royal_wax_print_suit.png' },
+  { id: 'accessories', name: 'Accessories', icon: '👜', preview: '/photos/set_4_img_2.jpg' }, // You can change this to any relevant accessory image
+];
   const fabrics = [
     { id: 'ankara', name: 'Ankara Print', price: 0, texture: 'Cotton blend with vibrant wax prints' },
     { id: 'kente', name: 'Kente Strips', price: 50, texture: 'Hand-woven silk with traditional patterns' },
