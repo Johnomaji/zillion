@@ -7,65 +7,64 @@ import Footer from '../components/Footer';
 const Lookbook = () => {
   const [selectedCollection, setSelectedCollection] = useState('all');
 
-  const collections = [
-    {
-      id: 1,
-      title: "2025 Spring – Tropical Noir",
-      season: "Spring 2025",
-      description: "Lush greens and bold prints under city lights. Kente-styled jackets meet streetwear.",
-      images: [
-        { id: 1, src: "/placeholder.svg", alt: "Tropical Noir Look 1" },
-        { id: 2, src: "/placeholder.svg", alt: "Tropical Noir Look 2" },
-        { id: 3, src: "/placeholder.svg", alt: "Tropical Noir Look 3" },
-        { id: 4, src: "/placeholder.svg", alt: "Tropical Noir Look 4" }
-      ],
-      tags: ["streetwear", "kente", "urban", "green"],
-      color: "from-green-800 to-emerald-600"
-    },
-    {
-      id: 2,
-      title: "2024 Summer – Safari Sunset",
-      season: "Summer 2024",
-      description: "Earth-toned linens and fluid dresses on a beach at dusk.",
-      images: [
-        { id: 5, src: "/placeholder.svg", alt: "Safari Sunset Look 1" },
-        { id: 6, src: "/placeholder.svg", alt: "Safari Sunset Look 2" },
-        { id: 7, src: "/placeholder.svg", alt: "Safari Sunset Look 3" },
-        { id: 8, src: "/placeholder.svg", alt: "Safari Sunset Look 4" }
-      ],
-      tags: ["linen", "earth-tones", "beach", "sunset"],
-      color: "from-orange-800 to-amber-600"
-    },
-    {
-      id: 3,
-      title: "2024 Fall – Urban Tribal",
-      season: "Fall 2024",
-      description: "Structured blazers with traditional patterns, shot in the concrete jungle.",
-      images: [
-        { id: 9, src: "/placeholder.svg", alt: "Urban Tribal Look 1" },
-        { id: 10, src: "/placeholder.svg", alt: "Urban Tribal Look 2" },
-        { id: 11, src: "/placeholder.svg", alt: "Urban Tribal Look 3" },
-        { id: 12, src: "/placeholder.svg", alt: "Urban Tribal Look 4" }
-      ],
-      tags: ["blazers", "structured", "urban", "patterns"],
-      color: "from-gray-800 to-slate-600"
-    },
-    {
-      id: 4,
-      title: "2024 Holiday – Modern Heritage",
-      season: "Holiday 2024",
-      description: "Glittering gold and deep indigo wax prints for festive nights.",
-      images: [
-        { id: 13, src: "/placeholder.svg", alt: "Modern Heritage Look 1" },
-        { id: 14, src: "/placeholder.svg", alt: "Modern Heritage Look 2" },
-        { id: 15, src: "/placeholder.svg", alt: "Modern Heritage Look 3" },
-        { id: 16, src: "/placeholder.svg", alt: "Modern Heritage Look 4" }
-      ],
-      tags: ["gold", "indigo", "wax-prints", "festive"],
-      color: "from-yellow-800 to-blue-800"
-    }
-  ];
-
+const collections = [
+  {
+    id: 1,
+    title: "2025 Spring – Tropical Noir",
+    season: "Spring 2025",
+    description: "Lush greens and bold prints under city lights. Kente-styled jackets meet streetwear.",
+    images: [
+      { id: 1, src: "/photos/set_1_img_1.png", alt: "Tropical Noir Look 1" },
+      { id: 2, src: "/photos/set_1_img_2.png", alt: "Tropical Noir Look 2" },
+      { id: 3, src: "/photos/set_1_img_3.png", alt: "Tropical Noir Look 3" },
+      { id: 4, src: "/photos/set_1_img_4.png", alt: "Tropical Noir Look 4" }
+    ],
+    tags: ["streetwear", "kente", "urban", "green"],
+    color: "from-green-800 to-emerald-600"
+  },
+  {
+    id: 2,
+    title: "2024 Summer – Safari Sunset",
+    season: "Summer 2024",
+    description: "Earth-toned linens and fluid dresses on a beach at dusk.",
+    images: [
+      { id: 5, src: "/photos/set_2_img_1.png", alt: "Safari Sunset Look 1" },
+      { id: 6, src: "/photos/set_2_img_2.png", alt: "Safari Sunset Look 2" },
+      { id: 7, src: "/photos/set_2_img_3.png", alt: "Safari Sunset Look 3" },
+      { id: 8, src: "/photos/set_2_img_4.png", alt: "Safari Sunset Look 4" }
+    ],
+    tags: ["linen", "earth-tones", "beach", "sunset"],
+    color: "from-orange-800 to-amber-600"
+  },
+  {
+    id: 3,
+    title: "2024 Fall – Urban Tribal",
+    season: "Fall 2024",
+    description: "Structured blazers with traditional patterns, shot in the concrete jungle.",
+    images: [
+      { id: 9, src: "/photos/set_3_img_1.png", alt: "Urban Tribal Look 1" },
+      { id: 10, src: "/photos/set_3_img_3.png", alt: "Urban Tribal Look 2" },
+      { id: 11, src: "/photos/set_3_img_4.jpg", alt: "Urban Tribal Look 3" },
+      { id: 12, src: "/photos/set_3_img_4.png", alt: "Urban Tribal Look 4" }
+    ],
+    tags: ["blazers", "structured", "urban", "patterns"],
+    color: "from-gray-800 to-slate-600"
+  },
+  {
+    id: 4,
+    title: "2024 Holiday – Modern Heritage",
+    season: "Holiday 2024",
+    description: "Glittering gold and deep indigo wax prints for festive nights.",
+    images: [
+      { id: 13, src: "/photos/set_4_img_1.jpg", alt: "Modern Heritage Look 1" },
+      { id: 14, src: "/photos/set_4_img_2.jpg", alt: "Modern Heritage Look 2" },
+      { id: 15, src: "/photos/set_4_img_3.jpg", alt: "Modern Heritage Look 3" },
+      { id: 16, src: "/photos/set_4_img_4.jpg", alt: "Modern Heritage Look 4" }
+    ],
+    tags: ["gold", "indigo", "wax-prints", "festive"],
+    color: "from-yellow-800 to-blue-800"
+  }
+];
   const filteredCollections = selectedCollection === 'all' 
     ? collections 
     : collections.filter(collection => collection.season.toLowerCase().includes(selectedCollection));
