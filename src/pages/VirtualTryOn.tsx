@@ -8,21 +8,21 @@ const VirtualTryOn = () => {
   const [selectedModel, setSelectedModel] = useState('model1');
   const [selectedProduct, setSelectedProduct] = useState('');
   const [selectedColor, setSelectedColor] = useState('original');
-
-  const models = [
-    { id: 'model1', name: 'Amara', size: 'M', ethnicity: 'African', image: '/placeholder.svg' },
-    { id: 'model2', name: 'Kemi', size: 'L', ethnicity: 'African', image: '/placeholder.svg' },
-    { id: 'model3', name: 'Zara', size: 'S', ethnicity: 'Mixed', image: '/placeholder.svg' },
-    { id: 'model4', name: 'Aisha', size: 'XL', ethnicity: 'African', image: '/placeholder.svg' },
-  ];
-
-  const products = [
-    { id: 'blazer1', name: 'Ankara Executive Blazer', category: 'Blazers', image: '/placeholder.svg' },
-    { id: 'dress1', name: 'Kente Ceremonial Gown', category: 'Dresses', image: '/placeholder.svg' },
-    { id: 'shirt1', name: 'Urban Tribal Shirt', category: 'Shirts', image: '/placeholder.svg' },
-    { id: 'kaftan1', name: 'Luxury Beaded Kaftan', category: 'Kaftans', image: '/placeholder.svg' },
-  ];
-
+const models = [
+  { id: 'model1', name: 'Amara', size: 'M', ethnicity: 'African', image: '/photos/amara.png' },
+  { id: 'model2', name: 'Kemi', size: 'L', ethnicity: 'African', image: '/photos/kemi.png' },
+  { id: 'model3', name: 'Zara', size: 'S', ethnicity: 'Mixed', image: '/photos/zara.png' },
+  { id: 'model4', name: 'Aisha', size: 'XL', ethnicity: 'African', image: '/photos/aisha.png' },
+];
+js
+Copy
+Edit
+const products = [
+  { id: 'blazer1', name: 'Ankara Executive Blazer', category: 'Blazers', image: '/photos/ankara_executive_blazer.png' },
+  { id: 'dress1', name: 'Kente Ceremonial Gown', category: 'Dresses', image: '/photos/kente_ceremonial_gown.png' },
+  { id: 'shirt1', name: 'Urban Tribal Shirt', category: 'Shirts', image: '/photos/urban_tribal_shirt.png' },
+  { id: 'kaftan1', name: 'Luxury Beaded Kaftan', category: 'Kaftans', image: '/photos/luxury_beaded_kaftan.png' },
+];
   const colors = [
     { id: 'original', name: 'Original', color: 'bg-gradient-to-br from-gold to-africanprint' },
     { id: 'gold', name: 'Gold', color: 'bg-gold' },
