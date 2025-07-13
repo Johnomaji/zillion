@@ -7,98 +7,98 @@ import Footer from '../components/Footer';
 const Community = () => {
   const [activeTab, setActiveTab] = useState('stories');
 
-  const testimonials = [
-    {
-      id: 1,
-      name: "Amina Hassan",
-      location: "Lagos, Nigeria",
-      image: "/placeholder.svg",
-      quote: "Wearing Zillion Kulture, I feel unstoppable. The fit and print — it's like it was made for me.",
-      rating: 5,
-      product: "Ankara Executive Blazer",
-      verified: true
-    },
-    {
-      id: 2,
-      name: "Marcus Johnson",
-      location: "London, UK",
-      image: "/placeholder.svg",
-      quote: "The craftsmanship is incredible. I've never received so many compliments on an outfit.",
-      rating: 5,
-      product: "Urban Tribal Shirt",
-      verified: true
-    },
-    {
-      id: 3,
-      name: "Fatima Al-Rashid",
-      location: "Dubai, UAE",
-      image: "/placeholder.svg",
-      quote: "ZK represents everything I love about fashion - heritage, innovation, and pure luxury.",
-      rating: 5,
-      product: "Luxury Beaded Kaftan",
-      verified: true
-    }
-  ];
+const testimonials = [
+  {
+    id: 1,
+    name: "Amina Hassan",
+    location: "Lagos, Nigeria",
+    image: "/photos/amina_hassan.png",
+    quote: "Wearing Zillion Kulture, I feel unstoppable. The fit and print — it's like it was made for me.",
+    rating: 5,
+    product: "Ankara Executive Blazer",
+    verified: true
+  },
+  {
+    id: 2,
+    name: "Marcus Johnson",
+    location: "London, UK",
+    image: "/photos/marcus_johnson.jpg",
+    quote: "The craftsmanship is incredible. I've never received so many compliments on an outfit.",
+    rating: 5,
+    product: "Urban Tribal Shirt",
+    verified: true
+  },
+  {
+    id: 3,
+    name: "Fatima Al-Rashid",
+    location: "Dubai, UAE",
+    image: "/photos/fatima_el-rashid.png",
+    quote: "ZK represents everything I love about fashion - heritage, innovation, and pure luxury.",
+    rating: 5,
+    product: "Luxury Beaded Kaftan",
+    verified: true
+  }
+];
 
-  const communityPosts = [
-    {
-      id: 1,
-      user: "StyleWithSarah",
-      avatar: "/placeholder.svg",
-      image: "/placeholder.svg",
-      caption: "Stepped out in my new ZK piece and felt like royalty! ✨ #ZillionKulture #AfroFuture",
-      likes: 1247,
-      comments: 89,
-      hashtag: "#ZillionKulture",
-      verified: true
-    },
-    {
-      id: 2,
-      user: "KwameStyles",
-      avatar: "/placeholder.svg",
-      image: "/placeholder.svg",
-      caption: "From boardroom to the red carpet - ZK has me covered! 🔥 #StyleGoals #ZillionKulture",
-      likes: 892,
-      comments: 67,
-      hashtag: "#ZillionKulture",
-      verified: false
-    },
-    {
-      id: 3,
-      user: "ElegantEbony",
-      avatar: "/placeholder.svg",
-      image: "/placeholder.svg",
-      caption: "The attention to detail in this kaftan is unmatched. Pure artistry! 👑 #ZillionKulture",
-      likes: 1456,
-      comments: 123,
-      hashtag: "#ZillionKulture",
-      verified: true
-    }
-  ];
+const communityPosts = [
+  {
+    id: 1,
+    user: "StyleWithSarah",
+    avatar: "/photos/aisha.png",
+    image: "/photos/set_1_img_1.png",
+    caption: "Stepped out in my new ZK piece and felt like royalty! ✨ #ZillionKulture #AfroFuture",
+    likes: 1247,
+    comments: 89,
+    hashtag: "#ZillionKulture",
+    verified: true
+  },
+  {
+    id: 2,
+    user: "KwameStyles",
+    avatar: "/photos/kemi.png",
+    image: "/photos/set_1_img_2.png",
+    caption: "From boardroom to the red carpet - ZK has me covered! 🔥 #StyleGoals #ZillionKulture",
+    likes: 892,
+    comments: 67,
+    hashtag: "#ZillionKulture",
+    verified: false
+  },
+  {
+    id: 3,
+    user: "ElegantEbony",
+    avatar: "/photos/zara.png",
+    image: "/photos/set_1_img_3.png",
+    caption: "The attention to detail in this kaftan is unmatched. Pure artistry! 👑 #ZillionKulture",
+    likes: 1456,
+    comments: 123,
+    hashtag: "#ZillionKulture",
+    verified: true
+  }
+];
 
-  const events = [
-    {
-      id: 1,
-      title: "Lagos Fashion Week 2024",
-      date: "March 15, 2024",
-      image: "/placeholder.svg",
-      description: "ZK showcased our latest collection at Africa's premier fashion event."
-    },
-    {
-      id: 2,
-      title: "Vogue Feature",
-      date: "February 28, 2024",
-      image: "/placeholder.svg",
-      description: "Featured in Vogue's 'Designers to Watch' highlighting African fashion innovation."
-    },
-    {
-      id: 3,
-      title: "Cannes Red Carpet",
-      date: "May 20, 2024",
-      image: "/placeholder.svg",
-      description: "Our luxury pieces graced the red carpet at the Cannes Film Festival."
-    }
-  ];
+const events = [
+  {
+    id: 1,
+    title: "Lagos Fashion Week 2024",
+    date: "March 15, 2024",
+    image: "/photos/kente_ceremonial_gown.png",
+    description: "ZK showcased our latest collection at Africa's premier fashion event."
+  },
+  {
+    id: 2,
+    title: "Vogue Feature",
+    date: "February 28, 2024",
+    image: "/photos/ankara_executive_blazer.png",
+    description: "Featured in Vogue's 'Designers to Watch' highlighting African fashion innovation."
+  },
+  {
+    id: 3,
+    title: "Cannes Red Carpet",
+    date: "May 20, 2024",
+    image: "/photos/luxury_beaded_kaftan.png",
+    description: "Our luxury pieces graced the red carpet at the Cannes Film Festival."
+  }
+];
 
   return (
     <div className="min-h-screen bg-onyx">
