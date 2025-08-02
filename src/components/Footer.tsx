@@ -194,7 +194,7 @@ const Footer = () => {
               <Phone className="text-gold flex-shrink-0" size={18} />
               <div>
                 <div className="text-white font-medium text-sm sm:text-base">Phone</div>
-                <div className="text-gray-400 text-sm">+1 (555) 123-4567</div>
+                <div className="text-gray-400 text-sm">+(234)814-739-0810</div>
               </div>
             </div>
             

@@ -4,18 +4,20 @@ import { Sparkles, Users, Award, Globe } from 'lucide-react';
 
 const About = () => {
   const team = [
+
+    
     {
       name: "Amara Okafor",
-      role: "Founder & Creative Director",
+      role: "Creative Director",
       bio: "A design innovator steeped in heritage. Our creative lead channels family tradition into every stitch, crafting each silhouette with cultural flair.",
-      image: "/photos/amara_okafor.jpg",
+      image: "/photos/Nana.jpg",
       color: "from-gold to-africanprint"
     },
     {
-      name: "Kwame Asante",
-      role: "Tech Lead",
+      name: "Oboh Job Ikpa",
+      role: "CEO & Founder",
       bio: "A virtual fitting-room pioneer. They integrate Google's generative AI so every customer can try before they buy.",
-      image: "/photos/kwame_asante.png",
+      image: "/photos/oboh.jpg",
       color: "from-electric to-burgundy"
     },
     {
